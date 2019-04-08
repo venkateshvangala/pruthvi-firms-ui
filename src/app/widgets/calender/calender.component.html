@@ -1,0 +1,20 @@
+<div class="container-main calender-container" *ngIf="displayCalenderView">
+    <table class="table table-stripped mb-0">
+        <thead>
+            <tr class="month-row">
+                <th class="action-controls">
+                    <div class="pruthvi-firm-backward" (click)="getCalenderDays('PREV')"></div>
+                    <div class="pruthvi-firm-chevron-left" (click)="getCalenderDays('PREVDAY')"></div>
+                </th>
+                <th *ngFor="let day of displayCalenderView.days; let i = index;">
+                    <div> {{ day.date }} {{day.month }}</div>
+                    <div> {{ day.day }}</div>
+                </th>
+                <th class="action-controls">
+                    <div class="pruthvi-firm-forward" (click)="getCalenderDays('NEXT')"></div>
+                    <div class="pruthvi-firm-chevron-right" (click)="getCalenderDays('NEXTDAY')"></div>
+                </th>
+            </tr>
+        </thead>
+    </table>
+</div>

@@ -1,0 +1,63 @@
+pruthvi-firm-login-container{
+
+  .form-label-group {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  
+  input.is-invalid{
+    border-color: #f44336;
+  }
+  
+  .login-container{
+    overflow: hidden;
+    background: url('../../assets/images/background.jpg');
+    padding: 8rem 0;
+    height: 100vh;
+    .login-text{
+      font-size: 20px;
+      font-weight: bold;
+      color: #444444;
+    }
+    .login-card{
+      border-radius: 4px;
+      background: #ffffff;
+      padding: 40px;
+    }
+    .logo-title{
+      font-size: 1.9rem;
+      font-weight: 235;
+      color: #666666;
+    }
+    .card-signin{
+      font-size: .8rem;
+      font-weight: 400;
+      border: none;
+      .card-body {
+        padding: 1rem 0 0 0;
+        .form-group{
+          margin-bottom: 0px;
+        }
+      }
+      .btn{
+        padding: 4px;
+        margin-top: 2rem;
+        border-radius: 0 !important;
+        min-height: 40px;
+        color: #fff;
+        letter-spacing: 1.1px;
+        font-weight: 100;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+    }
+    input[type="email"],input[type="password"]{
+      max-height: 40px !important;
+      height: 40px !important;
+    }
+    a{
+      color: #787e8c !important;
+    }
+  }
+}
+  

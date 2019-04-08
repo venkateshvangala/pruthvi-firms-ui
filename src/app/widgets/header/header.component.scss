@@ -1,0 +1,28 @@
+.nav-icons{
+position: relative;
+span{
+    font-size: 1.25rem;
+    padding-right: 1.25rem;
+    cursor: pointer;
+}
+
+
+
+ul{
+    padding: 0;
+    list-style: none;
+    margin: 0px;
+    li{
+        padding: 8px 12px;
+        border-bottom: 1px solid #eef0f4;
+        cursor: pointer;
+    }
+    li:last-child{
+        border-bottom: none !important;
+    }
+    li:hover{
+        background: #f7f7f7;
+    }
+}
+
+}

@@ -1,0 +1,7 @@
+<ng-select [placeholder]="placeholder"
+  bindLabel="name" bindValue="id"
+  [clearable]="clearable"
+  [items]="data" (change)="handleChangeEvent($event)"
+  (search)="handleSearch($event)"
+  [(ngModel)]="selectedItem" [multiple]="isMultiSelect">
+</ng-select>

@@ -1,0 +1,28 @@
+<div class="main-container login-container">
+  <div class="container-main">
+    <div class="col-sm-8 col-md-6 col-lg-4 mx-auto login-card">
+      <div class="card card-signin">
+          <img class="logo-title mx-auto text-center mb-4" src="../../assets/images/logo.png" />
+        <!-- <label class="login-text text-center"> LOG IN </label> -->
+        <div class="card-body">
+          <form class="form-signin" [formGroup]="loginForm">
+            <div class="form-group">
+              <div class="form-label-group ">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" formControlName='username'
+                  [ngClass]="{ 'is-invalid' : submitted && username.invalid}">
+                <small *ngIf="(username.invalid && submitted)" class="form-text text-danger">Please enter valid username.</small>
+              </div>
+              <div class="form-label-group">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" formControlName='password'
+                  [ngClass]="{ 'is-invalid' : submitted && password.invalid}">
+                <small *ngIf="(password.invalid && submitted)" class="form-text text-danger">Please enter valid password.</small>
+              </div>
+              <button class="btn btn-primary btn-block" type="submit" (click)="login()">Sign In</button>
+              <a href="javascript:void(0);" class="text-center d-block mt-4">Forgot your password?</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

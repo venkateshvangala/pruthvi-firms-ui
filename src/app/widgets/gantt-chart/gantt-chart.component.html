@@ -1,0 +1,32 @@
+<div class="container-main gantt-chart-container">
+    <table class="table table-stripped" *ngIf="displayCalenderView">
+        <thead>
+            <tr class="month-row">
+                <th [attr.colspan]="displayCalenderView.noOfDays" class="month-container">
+                    <span class="pruthvi-firm-backward" (click)="getCalenderDays('PREV')"></span>
+                    <span>
+                        {{displayCalenderView.currenMonth}} - {{displayCalenderView.currentYear}}
+                    </span>
+                    <span class="pruthvi-firm-forward" (click)="getCalenderDays('NEXT')"></span>
+                </th>
+            </tr>
+            <tr class="week-row">
+                <th [attr.colspan]="5" *ngFor="let week of getWeeks(displayCalenderView.noOfWeeks);">Week
+                    #{{week}}</th>
+            </tr>
+            <tr class="day-row">
+                <th *ngFor="let day of displayCalenderView.days;">
+                    <div> {{ day.day }}</div>
+                    <div> {{ day.date }}</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-data-row">
+                <td *ngFor="let day of displayCalenderView.days;">
+                    <div>-</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
