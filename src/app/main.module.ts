@@ -1,15 +1,16 @@
+import { TileComponent } from './widgets/tile/tile.component';
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { RouterModule } from '@angular/router';
 import { NgSelectModule } from "@ng-select/ng-select";
 import { PopoverModule } from 'ngx-bootstrap/popover';
-import { GamePlanComponent } from './game-plan/game-plan.component';
-import { HomeComponent } from './home/home.component';
-import { HuddleComponent } from './huddle/huddle.component';
 import { MainRoutes } from './main.routes';
-import { MyPlayBookComponent } from './my-play-book/my-play-book.component';
-import { CalenderComponent, SelectboxComponent } from './widgets';
+import { MilletsComponent } from './millets/millets.component';
+import { PulsesComponent } from './pulses/pulses.component';
+import { RiceComponent } from './rice/rice.component';
+import { VegetablesComponent } from './vegetables/vegetables.component';
+import { SelectboxComponent } from './widgets';
 
 
 
@@ -23,12 +24,12 @@ import { CalenderComponent, SelectboxComponent } from './widgets';
     PopoverModule.forRoot()
   ],
   declarations: [
-    HomeComponent,
-    MyPlayBookComponent,
-    HuddleComponent,
-    GamePlanComponent,
+    RiceComponent,
+    MilletsComponent,
+    VegetablesComponent,
+    PulsesComponent,
     SelectboxComponent,
-    CalenderComponent
+    TileComponent
   ],
   entryComponents: []
 })

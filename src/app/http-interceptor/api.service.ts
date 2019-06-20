@@ -5,14 +5,13 @@ import { Observable } from 'rxjs';
 import { URLs } from '../../config/http-end-points';
 import { LoaderService } from '../services/loader.service';
 import { ApiServiceInterface } from './api-service-interface';
-import { InspireModalService } from '../services';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService implements ApiServiceInterface {
 
-  constructor(public http: HttpClient, private loaderService: LoaderService, public router: Router, public dialogService: InspireModalService) { }
+  constructor(public http: HttpClient, private loaderService: LoaderService, public router: Router) { }
   public baseUrl: any = 'baseURL';
   action: any = null;
   queryParams: any = null;

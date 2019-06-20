@@ -9,6 +9,7 @@ export class LoaderService {
 
   private loaderSubject = new Subject<LoaderState>();
   public loaderState = this.loaderSubject.asObservable();
+  
 
   hideLoader() {
     this.loaderSubject.next(<LoaderState>{ show: false });

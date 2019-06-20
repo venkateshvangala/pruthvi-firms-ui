@@ -1,30 +1,31 @@
-import { HuddleComponent } from './huddle/huddle.component';
-import { MyPlayBookComponent } from './my-play-book/my-play-book.component';
+import { PulsesComponent } from './pulses/pulses.component';
+import { MilletsComponent } from './millets/millets.component';
+import { VegetablesComponent } from './vegetables/vegetables.component';
+import { RiceComponent } from './rice/rice.component';
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { GamePlanComponent } from './game-plan/game-plan.component';
+
 
 
 export const MainRoutes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'rice'
+    redirectTo: 'vegitables'
   },
   {
     path: 'rice',
-    component: HomeComponent
+    component: RiceComponent
   },
   {
     path: 'vegitables',
-    component: MyPlayBookComponent
+    component: VegetablesComponent
   },
   {
     path: 'millets',
-    component: GamePlanComponent
+    component: MilletsComponent
   },
   {
     path: 'pulses',
-    component: HuddleComponent
+    component: PulsesComponent
   }
 ]
