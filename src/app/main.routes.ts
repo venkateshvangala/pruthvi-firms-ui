@@ -1,3 +1,4 @@
+import { CartComponent } from './cart/cart.component';
 import { PulsesComponent } from './pulses/pulses.component';
 import { MilletsComponent } from './millets/millets.component';
 import { VegetablesComponent } from './vegetables/vegetables.component';
@@ -27,5 +28,9 @@ export const MainRoutes: Routes = [
   {
     path: 'pulses',
     component: PulsesComponent
+  }, 
+  {
+    path: 'cart',
+    component: CartComponent
   }
 ]

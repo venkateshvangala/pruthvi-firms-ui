@@ -1,12 +1,12 @@
-import { CartService } from './../../services/cart.service';
+import { CartService } from '../../services/cart.service';
 import { Component, Input } from "@angular/core";
 
 @Component({
-    selector: 'pruthvi-firm-tile',
-    templateUrl: 'tile.component.html',
-    styleUrls: ['tile.component.scss']
+    selector: 'pruthvi-firm-cart-tile',
+    templateUrl: 'cart-tile.component.html',
+    styleUrls: ['cart-tile.component.scss']
 })
-export class TileComponent{
+export class CartTileComponent{
 
     constructor(private cartService: CartService){
 

@@ -1,3 +1,5 @@
+import { CartTileComponent } from './widgets/cart-tile/cart-tile.component';
+import { CartComponent } from './cart/cart.component';
 import { TileComponent } from './widgets/tile/tile.component';
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
@@ -29,7 +31,9 @@ import { SelectboxComponent } from './widgets';
     VegetablesComponent,
     PulsesComponent,
     SelectboxComponent,
-    TileComponent
+    TileComponent,
+    CartComponent,
+    CartTileComponent
   ],
   entryComponents: []
 })

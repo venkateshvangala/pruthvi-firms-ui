@@ -1,0 +1,7 @@
+<div class="container-fluid cart-container">
+    <div class="d-flex justify-content-center flex-wrap ">
+        <ng-container *ngFor="let item of cartItems; let i = index;">
+            <pruthvi-firm-cart-tile [item]="item"></pruthvi-firm-cart-tile>
+        </ng-container>
+    </div>
+</div>
