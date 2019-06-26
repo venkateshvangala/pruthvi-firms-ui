@@ -13,6 +13,7 @@ import { PulsesComponent } from './pulses/pulses.component';
 import { RiceComponent } from './rice/rice.component';
 import { VegetablesComponent } from './vegetables/vegetables.component';
 import { SelectboxComponent } from './widgets';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 
@@ -33,7 +34,8 @@ import { SelectboxComponent } from './widgets';
     SelectboxComponent,
     TileComponent,
     CartComponent,
-    CartTileComponent
+    CartTileComponent,
+    CheckoutComponent
   ],
   entryComponents: []
 })

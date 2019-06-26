@@ -5,3 +5,47 @@
 .container-main.item-image{
     display: inline-block !important;
 }
+
+
+.cart-container .row:first-child{
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+a:hover{
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+a{
+    color: inherit;
+}
+
+table tr td {
+    img{
+        width: 50px;
+        height: 50px;
+    }
+    vertical-align: middle;
+
+    a{
+        color: #007bff;
+    }
+    
+
+    input[type="number"]{
+        max-width: 100px;
+        text-align: center;
+        padding-left: 28px;
+    }
+    &:last-child{
+        text-align: right;
+    }
+}
+tr:last-child{
+    border-bottom: 2px solid #DDDDDD;
+}
+
+
+
