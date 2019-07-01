@@ -1,3 +1,4 @@
+import { CartService } from './../services/cart.service';
 import { Component } from '@angular/core';
 @Component({
     selector: "pruthvi-forms-checkout",
@@ -5,5 +6,10 @@ import { Component } from '@angular/core';
     styleUrls: ["checkout.component.scss"]
 })
 export class CheckoutComponent{
-    
+
+    public cartItems: any = [];
+
+    constructor(private cartService: CartService){
+        this.cartItems = this.cartService.cartItems;
+    }
 }

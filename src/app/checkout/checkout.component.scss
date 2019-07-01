@@ -1,0 +1,62 @@
+.checkout-left-container, .checkout-right-container{
+    border: 1px solid #dddddd;
+    background: #ffffff;
+    min-height: 500px;
+    padding: 1rem 0;
+}
+
+.step-number{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #28a745;
+    color: #28a745;
+    font-size: 16px;
+    margin-right: 1rem;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.card-content-container > label:nth-child(2){
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.card-content-container .text-muted{
+    font-style: italic;
+}
+
+.card-content-container .number-content-container input[type='text']{
+    display: inline-block;
+    width: 54px;
+    margin-right: 1rem;
+    height: 36.25px;
+    border-radius: 0;
+}
+
+input.form-control{
+    border-radius: 0px !important;
+}
+
+button{
+    border-radius: 0;
+    height: 36px;
+}
+
+.number-content-container, .address-container{
+    margin-left: 2.5rem;
+}
+
+.card-content-container{
+    border-bottom: 1px solid #dddddd;
+    &:last-child{
+        border: none !important;
+    }
+}
+
+input[name="address-type"]{
+    margin-right: 6px;
+}
+
+table thead tr th{
+    border-top: 0 !important;
+}

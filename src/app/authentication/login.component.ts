@@ -33,12 +33,11 @@ export class LoginComponent{
     this.submitted = true;
     let username = this.loginForm.value.username;
     let password = this.loginForm.value.password
-    debugger
     if(username && password){
       this.loginForm.controls.username.setValue(this.loginForm.value.username);
       this.loginForm.controls.password.setValue(this.loginForm.value.password);
       localStorage.setItem('id_token', "accesss_token");
-      this.router.navigate(['/main/home']);
+      this.router.navigate(['/main']);
     }
   }
 }
