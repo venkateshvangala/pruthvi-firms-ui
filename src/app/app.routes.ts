@@ -7,11 +7,12 @@ export const ROUTES: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'login'
+    redirectTo: 'main'
   },
   {
     path: 'login',
-    component: LoginComponent
+    redirectTo: 'main'
+    // component: LoginComponent
   },
   {
     path: 'main',

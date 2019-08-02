@@ -1,0 +1,80 @@
+<div class="container-fluid">
+    <div class="d-flex justify-content-center flex-wrap ">
+        <div class="container-fluid filter-contaer">
+            <h5> Filter By:</h5>
+            <div class="row ">
+                <div class="col-md-3">
+                    <div class="sub-title"> Employee ID</div>
+                    <pruthvi-firm-select [items]="employess" (handleOptionsChange)="handleOptionsChange($event, 'selectedEmp')"
+                        [selectedItem]="selectedEmp"></pruthvi-firm-select>
+                </div>
+                <div class="col-md-3">
+                    <div class="sub-title">Badge Type</div>
+                    <pruthvi-firm-select [items]="badgeTypes" (handleOptionsChange)="handleOptionsChange($event, 'selectedBadge')"
+                    [selectedItem]="selectedBadge"></pruthvi-firm-select>
+                </div>
+                <div class="col-md-3">
+                    <div class="sub-title"> Department</div>
+                    <pruthvi-firm-select [items]="departments" (handleOptionsChange)="handleOptionsChange($event, 'selectedDepartment')"
+                        [selectedItem]="selectedDepartment"></pruthvi-firm-select>
+                </div>
+               
+            </div>
+            <div class="clearfix"> <br /></div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="sub-title">Login Date</div>
+                    <input type="text" placeholder="Datepicker" 
+                        (bsValueChange)="onDateChange($event, 'logIn')"
+                        class="form-control" [bsValue]="logIn" bsDatepicker>
+                </div>
+               
+                <div class="col-md-3">
+                    <div class="sub-title">Logout Date</div>
+                    <input type="text" placeholder="Datepicker" 
+                        (bsValueChange)="onDateChange($event, 'logOut')"
+                        class="form-control" [bsValue]="logOut" bsDatepicker>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="container-fluid report-table-container">
+            <div class="container-main d-flex justify-content-end mb-4">
+                <button class="btn btn-danger" (click)="fetchReport()"> Search </button>
+                <button class="btn btn-success"> Export </button>
+            </div>
+            <div class="container-main">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Full Name</th>
+                            <th scope="col">Employee ID</th>
+                            <th scope="col">Badge Type</th>
+                            <th scope="col">Department</th>
+                            <th scope="col">Login Time</th>
+                            <th scope="col">Logout Time</th>
+                            <th scope="col">Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody *ngIf="reports && reports.length">
+                        <tr class="{{i%2 == 0 ? 'table-success': 'table-danger'}}" *ngFor="let report of reports; let i = index;">
+                            <th scope="row">{{report.id}}</th>
+                            <td>{{report.test}}</td>
+                            <td>{{report.test}}</td>
+                            <td>{{report.test}}</td>
+                            <td>{{report.test}}</td>
+                            <td>{{report.test}}</td>
+                            <td>{{report.test}}</td>
+                            <td>{{report.test}}</td>
+                            <td>{{report.test}}</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

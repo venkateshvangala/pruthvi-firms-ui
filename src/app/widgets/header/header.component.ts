@@ -1,4 +1,3 @@
-import { CartService } from './../../services/cart.service';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -11,7 +10,7 @@ export class HeaderComponent {
 
     userName: any = localStorage.getItem('userName')
     
-    constructor(private router: Router, private cartService: CartService){
+    constructor(private router: Router){
 
     }
 

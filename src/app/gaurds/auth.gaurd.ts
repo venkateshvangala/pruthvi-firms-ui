@@ -9,6 +9,7 @@ export class AuthGaurd implements CanActivate{
   constructor(private router: Router) { }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
+    return true;
     if (localStorage.getItem('id_token'))
     return true;
     this.router.navigate(['/login']);

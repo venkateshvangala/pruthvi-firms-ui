@@ -30,7 +30,8 @@ a{
 
 /******************* Main App Container Styles Start *******************/
 .navbar {
-  height: $pruthvi-firm-nav-bar-height;
+  // height: $pruthvi-firm-nav-bar-height;
+  height: 88px;
   padding: 0.5rem $pruthvi-firm-app-padding;
   // color: $pruthvi-firm-white-color !important;
   background: $pruthvi-firm-nab-bar-bg;
