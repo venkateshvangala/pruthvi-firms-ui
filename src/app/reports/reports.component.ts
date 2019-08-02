@@ -83,7 +83,11 @@ export class ReportsComponent {
     fetchReport(){
         if(this.isValid()){
             this.reportsService.getReport({
-
+                'empId': this.selectedEmp,
+                'badgeId': this.selectedBadge,
+                'deptId': this.selectedDepartment,
+                'logIn': this.logIn,
+                'logOut': this.logOut
             }).subscribe(
                 res => {
                     this.reports = res;
